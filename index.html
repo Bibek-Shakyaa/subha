@@ -322,7 +322,7 @@
                     <ul class="splide__list" style="height: 400px;">
                         <a href="https://signatureyashmagh.com/product/navy-blue-mini-subha/">
                         <li class="splide__slide"> 
-                        <div class="slide">
+                        <div class="slideMini">
                             <img src="./assets/images/mini subha/Navy Mini Subha.jpg" alt="">
                             <h5>Navy Mini Subha</h5>                           
                         </div>
@@ -330,7 +330,7 @@
                     </li>
                         <a href="https://signatureyashmagh.com/product/arabian-white-mini-subha/">
                         <li class="splide__slide"> 
-                        <div class="slide">
+                        <div class="slideMini">
                             <img src="./assets/images/mini subha/Arabian Mini Subha.jpg" alt="">
                             <h5>Arabian Mini Subha</h5>
                         </div>
@@ -338,7 +338,7 @@
                     </li>
                         <a href="https://signatureyashmagh.com/product/jet-black-mini-subha/">
                         <li class="splide__slide"> 
-                        <div class="slide">
+                        <div class="slideMini">
                             <img src="./assets/images/mini subha/Jet Black Mini Subha.jpg" alt="">
                             <h5>Jet Black Mine Subha</h5>
                         </div>
@@ -346,7 +346,7 @@
                     </li>
                         <a href="https://signatureyashmagh.com/product/agarwood-brown-mini-subha/">
                         <li class="splide__slide"> 
-                        <div class="slide">
+                        <div class="slideMini">
                             <img src="./assets/images/mini subha/Agarwood Brown Mini Subha.jpg" alt="">
                             <h5>Agarwood Brown Mini Subha</h5>
                         </div>
@@ -354,7 +354,7 @@
                     </li>
                         <a href="https://signatureyashmagh.com/product/pearl-beige-mini-subha/">
                         <li class="splide__slide"> 
-                        <div class="slide">
+                        <div class="slideMini">
                             <img src="./assets/images/mini subha/Pearl Mini Subha.jpg" alt="">
                             <h5>Pearl Mini Subha</h5>
                         </div>
@@ -367,6 +367,61 @@
                       
                     </ul>
                 </div>
+                <script defer>
+                  function adjustSplideHeight() {
+    // Get all slideMini elements inside #imgSplideMini
+    const slides = document.querySelectorAll('#imgSplideMini .slideMini');
+    
+    // Get the splide__list and splide__track elements inside #imgSplideMini
+    const splideList = document.querySelector('#imgSplideMini .splide__list');
+    const splideTrack = document.querySelector('#imgSplideMini .splide__track');
+    
+    // Check if slides exist
+    if (slides.length === 0) {
+        console.log("No slides found.");
+        return;
+    }
+
+    // Find the maximum height among the slides based on img and h5 heights
+    let maxHeight = 0;
+    slides.forEach(slide => {
+        const img = slide.querySelector('img');
+        const h5 = slide.querySelector('h5');
+        
+        // Calculate total height
+        const imgHeight = img ? img.getBoundingClientRect().height : 0;
+        const h5Height = h5 ? h5.getBoundingClientRect().height : 0;
+        const totalHeight = imgHeight + h5Height;
+
+        console.log(`Slide: ${slide}, imgHeight: ${imgHeight}, h5Height: ${h5Height}, totalHeight: ${totalHeight}`);
+        
+        if (totalHeight > maxHeight) {
+            maxHeight = totalHeight;
+        }
+    });
+
+    console.log(`Max height found: ${maxHeight}`);
+    
+    // Set the minimum height of splide__list and splide__track to the maximum height found
+    if (splideList) {
+        splideList.style.minHeight = `${maxHeight}px`;
+        console.log(`Set min-height of .splide__list to ${maxHeight}px`);
+    }
+    
+    if (splideTrack) {
+        splideTrack.style.minHeight = `${maxHeight}px`;
+        console.log(`Set min-height of .splide__track to ${maxHeight}px`);
+    }
+}
+
+// Run the function initially once the DOM content is fully loaded
+window.addEventListener('DOMContentLoaded', adjustSplideHeight);
+
+// Add event listener for window resize to adjust heights dynamically
+window.addEventListener('resize', adjustSplideHeight);
+
+
+                </script>
             </div>
         </div>
         </section>
