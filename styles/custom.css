@@ -700,7 +700,6 @@ body.arabic {
 }
 
 
-
 .headerSection {
   position: fixed;
   top: 0;
@@ -775,3 +774,13 @@ body.arabic {
 }
 
 /*# sourceMappingURL=custom.css.map */
+
+
+/* store */
+.mainGrid .fullCol h2{
+  margin-bottom: 48px;
+}
+
+.mainGrid .stores{
+  padding: 80px 0;
+}
