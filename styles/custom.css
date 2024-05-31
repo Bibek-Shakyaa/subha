@@ -607,13 +607,15 @@ body.arabic {
 
 .miniSlideGrid {
   display: grid;
-  font-size: var(--headingFS);
   gap: 12rem;
   position: relative;
 }
+/* .miniSlideGrid >* {
+font-size: var(--headingFS);
+} */
 @media (min-width: 768px) {
   .miniSlideGrid {
-    grid-template-columns: 5ch 1fr;
+    grid-template-columns: 5rem 1fr;
   }
 }
 .miniSlideGrid h2 {
@@ -774,4 +776,7 @@ body.arabic {
   }
 }
 
+#imgSplideMini h5{
+  font-size: 18px;
+ }
 /*# sourceMappingURL=custom.css.map */
