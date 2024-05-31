@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subha</title>
+    <link rel="stylesheet" href="./styles/custom.css">
+    <link rel="stylesheet" href="./styles/splide-core.min.css">
+    <link rel="stylesheet" href="./styles/aos.css">
+    <link id="favIcon" rel="icon" type="image/png" href="./assets/icons/subha-fav-icon.png"/>
+    <script defer src="./assets/js/splide.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+</head>
+<body>
+    <header class="headerSection">
+        <img src="./assets/icons/Subha logo.svg" alt="">
+        <button id="changeLanguageButton" class="langBtn">EN</button>
+        <script defer>
+            document.addEventListener("DOMContentLoaded", function() {
+                const headerSection = document.querySelector('.headerSection');
+                const logo = headerSection.querySelector('img');
+                const checkScroll = () => {
+                    const scrolled = window.scrollY;
+                    const viewportHeight = window.innerHeight;
+                    if (scrolled > (0.8 * viewportHeight)) {
+                        headerSection.style.backgroundColor = 'var(--lightColor)';
+                        logo.style.filter = 'none'; // or appropriate filter for original color
+                    } else {
+                        headerSection.style.backgroundColor = 'transparent'; // or your default color
+                        logo.style.filter = 'invert(1)'; // This inverts the colors, turning black to white
+                    }
+                };
+        
+                window.addEventListener('scroll', checkScroll);
+                // Initial check in case the page loads already scrolled
+                checkScroll();
+            });
+        </script>
+    </header>
+    <main class="mainGrid">
+        <section class="fullWidth fullHeight fullMediaWrapper">
+            <!-- <video src="./assets/video/dummyVid.mp4" autoplay loop></video> -->
+            <!-- <video src="./assets/video/dummyVid.mp4"></video> -->
+            <div class="ifrmeContainer">
+                <iframe id="player" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Subha Designs By Signature Yashmagh" width="100%" height="360" src="https://www.youtube.com/embed/QCOOm0DxJZc?autoplay=1&amp;rel=0&amp;showinfo=0&amp;showsearch=0&amp;controls=0&amp;loop=1&amp;enablejsapi=1&amp;mute=1&amp;playlist=QCOOm0DxJZc&amp;origin=https%3A%2F%2Fsignatureyashmagh.com&amp;widgetid=1"></iframe>
+            </div>
+            <div class="contentWrapper txtLight txtCenter">
+                <h1>Modern Interpretation Of An Ancient Classic</h1>
+                <small>Discover Timeless Beauty in Our Contemporary Subha Collection</small>
+                <button class="btn-light-glass btn-sm upper"><span>Shop Now</span></button>
+            </div>
+        </section>
+
+        <section class="breakout overlappingSection" data-aos="fade-up" > 
+            <div class="grid-item imgWrapper">
+                <img src="./assets/images/About subha black bg.png" alt="">
+            </div>
+            <div class="grid-item relative grid center">
+                <div class="contentWrapper">
+                    <h1>What is Subha?</h1>
+                    <p class="h2">The literal translation is concept that bound between <strong>“beautiful”</strong> and <strong>“charm”.</strong></h2>
+                    <p class="txtBodyGrey">Beads have played a key role in human history. They have been viewed as mystical object, jewels, talismans and meditation items. No matter the origin or material, beads have been close to the human body and soul for centuries. Subha has been an essential product for many men and women in the Arab world. No gulf native feel whole unless he or she has a Subha close.</p>
+                </div>
+                <div class="pattern starPattern" style="--insetInlineStart: 30%;">
+
+                </div>
+            </div>
+        </section>
+        <section class="breakout sectionGap">
+            <h2 class="txtCenter">Why is our Subha unique?</h2>
+            <div class="whyContainer">
+                <div class="txtWrapperLeft" data-aos="fade-right" data-aos-delay="50">
+                    <div class="txtItem">
+                        <div class="txtHeadingGrey w700 mdTxt upper">Create with PLA</div>
+                        <div class="icon"><img src="./assets/icons/PLA.svg" alt=""></div>
+                        <div class="description">We manufacture our Subhas using state-of-the-art 3D printing </div>
+                    </div>
+                    <div class="txtItem">
+                        <div class="txtHeadingGrey w700 mdTxt upper">Eco Friendly</div>
+                        <div class="icon"><img src="./assets/icons/EcoFriendly.svg" alt=""></div>
+                        <div class="description">This eco-friendly technology results in splendid Subhas </div>
+                    </div>
+                    <div class="txtItem">
+                        <div class="txtHeadingGrey w700 mdTxt upper">Hand Crafted</div>
+                        <div class="icon"><img src="./assets/icons/HandCrafted.svg" alt=""></div>
+                        <div class="description">The 33 beads are combined using cotton or silk by hand. </div>
+                    </div>
+                </div>
+                <div class="imgWrapper" data-aos="fade-down">
+                    <img src="./assets/images/Unique 1.png" alt="">
+                </div>
+                <div class="txtWrapperRight" data-aos="fade-left" data-aos-delay="50">
+                    <div class="txtItem">
+                        <div class="txtHeadingGrey w700 mdTxt upper">Variety of Colors</div>
+                        <div class="icon"><img src="./assets/icons/VarietyofColors.svg" alt=""></div>
+                        <div class="description">The beads have a unique texture and a degree of thickness </div>
+                    </div>
+                    <div class="txtItem">
+                        <div class="txtHeadingGrey w700 mdTxt upper">Unique Texture</div>
+                        <div class="icon"><img src="./assets/icons/UniqueTexture.svg" alt=""></div>
+                        <div class="description">The Subhas come in different sizes and are bonded  </div>
+                    </div>
+                    <div class="txtItem">
+                        <div class="txtHeadingGrey w700 mdTxt upper">Top-of-the-art 3D printing</div>
+                        <div class="icon"><img src="./assets/icons/Top-of-the-art3DPrinting.svg" alt=""></div>
+                        <div class="description">The Subhas come in different sizes and are bonded   </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mainGrid fullCol sectionGap productSliderSection greyBg">
+            <div class="breakoutFullwidth">
+                <div class="productSliderGrid" style="height: 500px;">
+                    <div id="txtSplide" class="splideTxt splide" role="group" aria-label="Text Slider" data-aos="fade-right">
+                    <h2>Our <br> Products</h1>
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">
+                                <div class="txtWrapper">
+                                    <h3 class="lgFS">Kandorah Subha</h3>
+                                    <p>The Sunrise Golden Subha was designed to replicate the brightness and resilience of a desert sunrise. Much like a sunrise, the subha offers comfort and serenity in the simplest of forms. It’s bright hue not only brings a sense of warmth, it also illuminates.</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="txtWrapper">
+                                    <h3 class="lgFS">Cedar Horse Subha</h3>
+                                    <p>The Cedar Horse Subha is a tribute to the mesmerizing thoroughbred horse both in shape and color. The bead has been uniquely designed to imitate the sleek figure of the thoroughbred with a dark brown tassel resembling the tale. Heroism and sophistication are the foundations of this Subha.</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="txtWrapper">
+                                    <h3 class="lgFS">Pearl Subha</h3>
+                                    <p>The Pearl Subha imitates the luster, and ethereal glow of the precious gem. It also embodies the Emirati culture and history by showcasing how this prized possession can signify luxury yet simplicity.</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="txtWrapper">
+                                    <h3 class="lgFS">Jet Black Subha</h3>
+                                    <p>The stunning black Subha is inspired by the Arabian men’s black headband called “Agal” –which is used to keep the yashmagh in place. The 33-piece beaded Subha represents solidarity and respect for centuries-old traditions.</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                              </li>
+                            <li class="splide__slide">
+                                <div class="txtWrapper">
+                                    <h3 class="lgFS">Agarwood Brown Subha</h3>
+                                    <p>The Agarwood Brown Subha pays homage to oud in terms of color, density and concept. Like Oud, this Subha has no similar analogues, it is unique, precious and pleasing. The distinctive shade of oud is portrayed in this Subha and resonates in every bead.</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                              </li>
+                            <li class="splide__slide">
+                                <div class="txtWrapper">
+                                    <h3 class="lgFS">Arabian White Subha</h3>
+                                    <p>The Arabian White Subha mimics the characteristic of the pure bred white horse-“The Rabdan” which the founding father of the United Arab Emirates had a special place in his heart for. The magnificence of the animal, its beauty and elegance are portrayed in each sterling bead.</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                              </li>
+                            <li class="splide__slide">
+                                <div class="txtWrapper">
+                                    <h3 class="lgFS">The Blue Subha</h3>
+                                    <p>Inspired by the pristine azure skies of the Arabian Gulf, our Blue Subha stands out with its unique hue. It’s a captivating blend of blue shades mirroring the enchanting horizon, reflecting the essence of the region’s natural beauty. This Subha embodies a serene morning ambiance and the distinctive vistas surrounding us. It’s not just a Subha; it’s a masterpiece that seamlessly marries simplicity and elegance, drawing from the hues of nature. There’s nothing quite like it, making it a truly one-of-a-kind piece of art.</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                              </li>
+                            <li class="splide__slide">
+                                <div class="txtWrapper">
+                                    <h3 class="lgFS">Navy Blue Subha</h3>
+                                    <p>The Navy Blue Subha has been precisely crafted to resemble the deep blue hues of the majestic Arabian Gulf. With thirty-three oval-shaped beads that have been 3D-printed, it symbolizes the richness and ever-lasting characteristics of the Arabian Gulf.</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                              </li>
+                            <li class="splide__slide">
+                                <div class="txtWrapper">
+                                    <h3 class="lgFS">Sunrise Gold Subha</h3>
+                                    <p>The Sunrise Golden Subha was designed to replicate the brightness and resilience of a desert sunrise. Much like a sunrise, the subha offers comfort and serenity in the simplest of forms. It’s bright hue not only brings a sense of warmth, it also illuminates.</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                              </li>
+                            <li class="splide__slide">
+                                <div class="txtWrapper">
+                                    <h3 class="lgFS">Deep Ocean Subha</h3>
+                                    <p>The Deep Ocean Subha has been precisely crafted to resemble the deep blue hues of the majestic Oceans. With thirty-three cylinder-shaped beads that have been 3D-printed, it symbolizes the richness and ever-lasting characteristics of the Ocean.</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                              </li>
+                          </ul>
+                    </div>
+                  </div>
+
+                  <div id="imgSplide" class="splideImg splide" role="group" aria-label="Image Slider" data-aos="fade-left">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">
+                                <div class="slide">
+                                    <img src="./assets/images/kandoora_1-1090x1536.jpg" data-splide-lazy="./assets/images/kandoora_1-1090x1536.jpg" alt="">
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="slide">
+                                    <img src="./assets/images/deep-ocean_2-1090x1536.jpg" data-splide-lazy="./assets/images/deep-ocean_2-1090x1536.jpg" alt="">
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="slide">
+                                    <img src="./assets/images/mini-black_3-1090x1536.jpg" data-splide-lazy="./assets/images/mini-black_3-1090x1536.jpg" alt="">
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="slide">
+                                    <img src="./assets/images/mini-white_3-1090x1536.jpg" data-splide-lazy="./assets/images/mini-white_3-1090x1536.jpg" alt="">
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="slide">
+                                    <img src="./assets/images/mini-white_3-1090x1536.jpg" data-splide-lazy="./assets/images/mini-white_3-1090x1536.jpg" alt="">
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="slide">
+                                    <img src="./assets/images/mini-white_3-1090x1536.jpg" data-splide-lazy="./assets/images/mini-white_3-1090x1536.jpg" alt="">
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="slide">
+                                    <img src="./assets/images/mini-white_3-1090x1536.jpg" data-splide-lazy="./assets/images/mini-white_3-1090x1536.jpg" alt="">
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="slide">
+                                    <img src="./assets/images/mini-white_3-1090x1536.jpg" data-splide-lazy="./assets/images/mini-white_3-1090x1536.jpg" alt="">
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="slide">
+                                    <img src="./assets/images/mini-white_3-1090x1536.jpg" data-splide-lazy="./assets/images/mini-white_3-1090x1536.jpg" alt="">
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="slide">
+                                    <img src="./assets/images/mini-white_3-1090x1536.jpg" data-splide-lazy="./assets/images/mini-white_3-1090x1536.jpg" alt="">
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="slide">
+                                    <!-- <img src="./assets/images/mini-white_3-1090x1536.jpg" data-splide-lazy="./assets/images/mini-white_3-1090x1536.jpg" alt=""> -->
+                                </div>
+                              </li>
+                          </ul>
+                    </div>
+                    <script defer>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const imgSplide = document.getElementById('imgSplide');
+                            const splideList = imgSplide.querySelector('.splide__list');
+                            function updateMinHeight() {
+                                const liElements = imgSplide.querySelectorAll('li');
+                                let maxHeight = 0;
+                                liElements.forEach(li => {
+                                    const liHeight = li.offsetHeight;
+                                    if (liHeight > maxHeight) {
+                                        maxHeight = liHeight;
+                                    }
+                                });
+                        
+                                splideList.style.minHeight = `${maxHeight}px`;
+                                // splideList.style.minHeight = `100px`;
+                            }
+                        
+                            // Initial call to set the min-height
+                            setTimeout(updateMinHeight, 500);
+                        
+                            // Listen for resize events to update min-height dynamically
+                            window.addEventListener('resize', updateMinHeight);
+                        });
+                        </script>
+                        
+                  </div>
+            </div>
+            <script defer src="./assets/js/splideInit.js"></script>
+        </div>
+        </section>
+        <section class="breakoutFullwidth sectionGap">
+            <div class="miniSlideGrid">
+                <div class="txtWrapper">
+                    <h2>Mini Subha</h2>
+                    <div id="imgSplideMiniLeft" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                </li>
+                                <script defer>
+                                    document.addEventListener('DOMContentLoaded', function() {
+                                        // Get the #imgSplideMini element
+                                        const imgSplideMini = document.querySelector('#imgSplideMini');
+                                        
+                                        // Count the number of <li> elements inside #imgSplideMini
+                                        const liCount = imgSplideMini.querySelectorAll('li').length;
+                                        
+                                        // Calculate the number of new <li> elements to create (one less than the count)
+                                        const newLiCount = liCount - 1;
+                                        
+                                        // Get the <ul> inside #imgSplideMiniLeft
+                                        const imgSplideMiniLeftUl = document.querySelector('#imgSplideMiniLeft ul');
+                                        
+                                        // Create and append the new <li> elements
+                                        for (let i = 0; i < newLiCount; i++) {
+                                            const newLi = document.createElement('li');
+                                            newLi.className = 'splide__slide';
+                                            imgSplideMiniLeftUl.appendChild(newLi);
+                                        }
+                                    });
+
+                                </script>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <div id="imgSplideMini" class="splide" data-aos="fade-left">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"> 
+                        <div class="slide">
+                            <img src="./assets/images/mini subha/Navy Mini Subha.jpg" alt="">
+                            <h5>Navy Mini Subha</h5>                           
+                        </div>
+                    </li>
+                        <li class="splide__slide"> 
+                        <div class="slide">
+                            <img src="./assets/images/mini subha/Arabian Mini Subha.jpg" alt="">
+                            <h5>Arabian Mini Subha</h5>
+                        </div>
+                    </li>
+                        <li class="splide__slide"> 
+                        <div class="slide">
+                            <img src="./assets/images/mini subha/Jet Black Mini Subha.jpg" alt="">
+                            <h5>Jet Black Mini Subha</h5>
+                        </div>
+                    </li>
+                        <li class="splide__slide"> 
+                        <div class="slide">
+                            <img src="./assets/images/mini subha/Agarwood Brown Mini Subha.jpg" alt="">
+                            <h5>Agarwood Brown Mini Subha</h5>
+                        </div>
+                    </li>
+                        <li class="splide__slide"> 
+                        <div class="slide">
+                            <img src="./assets/images/mini subha/Pearl Mini Subha.jpg" alt="">
+                            <h5>Pearl Mini Subha</h5>
+                        </div>
+                    </li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="mainGrid fullCol sectionGap greyBg">
+            <div class="breakout">
+                <h2 class="txtCenter">We are available at</h2>
+                <div class="logoGrid" >
+                    <div class="grid-item">
+                        <div class="logo-wrapper">
+                            <img src="./assets/logos/cities-store.png" alt="">
+                        </div>
+                        <ul class="addressList">
+                            <li>
+                                <img src="./assets/icons/LocationIcon.svg" alt="">
+                                <span>Galleria Mall Al Barsha - Gigi Boutique</span>
+                             </li>
+                            <li>
+                                <img src="./assets/icons/LocationIcon.svg" alt="">
+                                <span>Galleria Mall Al Wasl</span>
+                             </li>
+                        </ul>
+
+                    </div>
+                    <div class="grid-item">
+                        <div class="logo-wrapper">
+                            <img src="./assets/logos/MuseumOfTheFuture-logo.png" alt="">
+                        </div>
+                        <ul class="addressList">
+                            <li>
+                                <img src="./assets/icons/LocationIcon.svg" alt="">
+                                <span>Sheikh Zayed Road - Commercial Center</span>
+                             </li>
+                        </ul>
+
+                    </div>
+                    <div class="grid-item">
+                        <div class="logo-wrapper">
+                            <img src="./assets/logos/tp-logo.png" alt="">
+                        </div>
+                        <ul class="addressList">
+                            <li>
+                                <img src="./assets/icons/LocationIcon.svg" alt="">
+                                <span>Kingdom of Saudi Arabia</span>
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <div class="logo-wrapper">
+                            <img src="./assets/logos/Louvre_AbuDhabi.png" alt="">
+                        </div>
+                        <ul class="addressList">
+                            <li>
+                                <img src="./assets/icons/LocationIcon.svg" alt="">
+                                <span>The store is in the cultural district of Saadiyat Island</span>
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fullWidth sectionGapEnd instagramSection">
+            <div class="topPart txtCenter">
+
+                <h2>
+                    Follow us on Instagram
+                </h2>
+                <span class="txtHeadingGrey w300">@subhadesign</span>
+            </div>
+        </section>
+    </main>
+    <footer class="fullWidth footerBg sectionGap footerSection">
+        <div class="logoWrapper"> <img src="./assets/icons/Subha footer log .svg" alt=""> </div>
+        <div class="iconGrid">
+           <a href="#"> <div class="grid-item"><img src="./assets/icons/x_logo.svg.svg" alt=""></div> </a>
+            <a href="#"> <div class="grid-item"><img src="./assets/icons/instagram_logo.svg.svg" alt=""></div> </a>
+            <a href="#"> <div class="grid-item"><img src="./assets/icons/tiktok_symbol.svg.svg" alt=""></div> </a>
+            <a href="#"> <div class="grid-item"><img src="./assets/icons/facebook_symbol.svg.svg" alt=""></div> </a>
+            <a href="#"> <div class="grid-item"><img src="./assets/icons/Threads_(app)_logo 1_layerstyle.svg" alt=""></div> </a>
+        </div>
+        <span>All rights reserved ©️ Subha Design 2024</span>
+    </footer>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function() {
+  if (getComputedStyle(document.documentElement).direction === 'rtl') {
+    document.body.classList.add('rtl');
+  }
+});
+    </script>
+    <script defer>
+          AOS.init({
+            disable:'phone',
+            duration:300,
+            delay:10,
+            offset: 200,
+          });
+    </script>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function() {
+  function updateFavicon() {
+    const favicon = document.getElementById('favicon');
+    const darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    favicon.style.filter = darkMode ? 'invert(1)' : 'none';
+  }
+
+  // Initial check
+  updateFavicon();
+
+  // Listen for changes in the dark mode preference
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
+});
+    </script>
+</body>
+</html>
