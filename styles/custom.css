@@ -702,7 +702,6 @@ font-size: var(--headingFS);
 }
 
 
-
 .headerSection {
   position: fixed;
   top: 0;
@@ -780,3 +779,13 @@ font-size: var(--headingFS);
   font-size: 18px;
  }
 /*# sourceMappingURL=custom.css.map */
+
+
+/* store */
+.mainGrid .fullCol h2{
+  margin-bottom: 48px;
+}
+
+.mainGrid .stores{
+  padding: 80px 0;
+}
