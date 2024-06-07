@@ -405,20 +405,26 @@
     // Set the minimum height of splide__list and splide__track to the maximum height found
     if (splideList) {
         splideList.style.minHeight = `${maxHeight}px`;
+        // splideList.style.maxHeight = `${maxHeight}px`;
         console.log(`Set min-height of .splide__list to ${maxHeight}px`);
     }
     
     if (splideTrack) {
         splideTrack.style.minHeight = `${maxHeight}px`;
-        console.log(`Set min-height of .splide__track to ${maxHeight}px`);
+        // splideTrack.style.maxHeight = `${maxHeight}px`;
+        // console.log(`Set min-height of .splide__track to ${maxHeight}px`);
     }
-}
+} 
 
+if (window.innerWidth > 768) {
 // Run the function initially once the DOM content is fully loaded
 window.addEventListener('DOMContentLoaded', adjustSplideHeight);
 
 // Add event listener for window resize to adjust heights dynamically
 window.addEventListener('resize', adjustSplideHeight);
+}else{
+    document.querySelector('#imgSplideMini .splide__list').style.maxHeight = '250px';
+}
 
 
                 </script>
