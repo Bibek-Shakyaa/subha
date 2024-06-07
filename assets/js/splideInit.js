@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     var thumbnails = new Splide('#imgSplide', {
-      gap: 10,
+      gap: 20,
       rewind: true,
       pagination: false,
       arrows: false,
