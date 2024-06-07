@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   function initializeSplide(direction) {
     var main = new Splide('#txtSplide', {
-      
+      direction: 'rtl',
       
       type: 'loop',
       type: 'fade',
@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
       flickMaxPages: 1,
       perPage: 1,
       updateOnMove: true,
-      direction: direction,
-      paginationDirection: direction,
+     
       breakpoints: {
         768: {
           arrows: false,
@@ -20,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     var thumbnails = new Splide('#imgSplide', {
-    
+      direction: 'rtl',
       
       gap: 50,
       type: 'loop',
@@ -35,8 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       updateOnMove: true,
       lazyload: 'sequential',
       focus: 0,
-      direction: direction,
-      paginationDirection: direction,
+      
     
       breakpoints: {
         768: {
@@ -68,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     var mini2 = new Splide('#imgSplideMiniLeft', {
-      
+      direction: 'rtl',
       gap: 10,
       rewind: true,
       pagination: false,
@@ -96,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Initial initialization with default direction
-  initializeSplide('ltr');
+  initializeSplide('rtl');
 
   document
     .getElementById('changeLanguageButton')
@@ -104,8 +102,8 @@ document.addEventListener('DOMContentLoaded', function () {
       // Toggle the direction
       const root = document.documentElement;
       const body = document.body;
-      const isRtl = root.style.direction === 'ltr';
-      const newDirection = isRtl ? 'ltr' : 'ltr';
+      const isRtl = root.style.direction === 'rtl';
+      const newDirection = isRtl ? 'rtl' : 'rtl';
 
       // Change the direction in the root element
       root.style.direction = newDirection;
