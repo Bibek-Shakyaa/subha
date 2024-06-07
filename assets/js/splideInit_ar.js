@@ -2,15 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
   function initializeSplide(direction) {
     var main = new Splide('#txtSplide', {
       direction: 'rtl',
-      
       type: 'loop',
-      type: 'fade',
       rewind: true,
+      paginationDirection: 'rtl',
       pagination: false,
       flickMaxPages: 1,
       perPage: 1,
       updateOnMove: true,
-     
       breakpoints: {
         768: {
           arrows: false,
@@ -20,10 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var thumbnails = new Splide('#imgSplide', {
       direction: 'rtl',
-      
       gap: 50,
       type: 'loop',
-      omitEnd: Boolean = false,
+      omitEnd: (Boolean = false),
       start: 0,
       rewind: true,
       pagination: false,
@@ -34,8 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
       updateOnMove: true,
       lazyload: 'sequential',
       focus: 0,
-      
-    
+
       breakpoints: {
         768: {
           perPage: 1,
@@ -45,7 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     var mini = new Splide('#imgSplideMini', {
-      
+      direction: direction,
+      direction: 'rtl',
       gap: 10,
       rewind: true,
       pagination: false,
@@ -55,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
       perPage: 5,
       updateOnMove: true,
       lazyload: 'sequential',
-      direction: direction,
       paginationDirection: direction,
       breakpoints: {
         768: {
@@ -66,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     var mini2 = new Splide('#imgSplideMiniLeft', {
+      direction: direction,
       direction: 'rtl',
       gap: 10,
       rewind: true,
@@ -76,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
       perPage: 1,
       updateOnMove: true,
       lazyload: 'sequential',
-      direction: direction,
       paginationDirection: direction,
       breakpoints: {
         768: {

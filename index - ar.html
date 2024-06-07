@@ -391,7 +391,7 @@
         // Calculate total height
         const imgHeight = img ? img.getBoundingClientRect().height : 0;
         const h5Height = h5 ? h5.getBoundingClientRect().height : 0;
-        const totalHeight = imgHeight + h5Height;
+        const totalHeight = imgHeight + h5Height +8; //h5 margin top
 
         console.log(`Slide: ${slide}, imgHeight: ${imgHeight}, h5Height: ${h5Height}, totalHeight: ${totalHeight}`);
         

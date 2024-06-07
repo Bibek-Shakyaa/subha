@@ -1,94 +1,94 @@
 @font-face {
-  font-family: "PlayfairDisplay";
-  src: url("../assets/font/PlayfairDisplay-VariableFont_wght.ttf");
+  font-family: 'PlayfairDisplay';
+  src: url('../assets/font/PlayfairDisplay-VariableFont_wght.ttf');
   font-style: normal;
 }
 @font-face {
-  font-family: "PlayfairDisplay";
-  src: url("../assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+  font-family: 'PlayfairDisplay';
+  src: url('../assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf');
   font-style: italic;
 }
 @font-face {
-  font-family: "Khula";
-  src: url("../assets/font/Khula-Regular.ttf");
+  font-family: 'Khula';
+  src: url('../assets/font/Khula-Regular.ttf');
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: "Khula";
-  src: url("../assets/font/Khula-Light.ttf");
+  font-family: 'Khula';
+  src: url('../assets/font/Khula-Light.ttf');
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
-  font-family: "Khula";
-  src: url("../assets/font/Khula-Bold.ttf");
+  font-family: 'Khula';
+  src: url('../assets/font/Khula-Bold.ttf');
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: "Khula";
-  src: url("../assets/font/Khula-ExtraBold.ttf");
+  font-family: 'Khula';
+  src: url('../assets/font/Khula-ExtraBold.ttf');
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
-  font-family: "Khula";
-  src: url("../assets/font/Khula-SemiBold.ttf");
+  font-family: 'Khula';
+  src: url('../assets/font/Khula-SemiBold.ttf');
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("../assets/font/Lato-Black.ttf");
+  font-family: 'Lato';
+  src: url('../assets/font/Lato-Black.ttf');
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("../assets/font/Lato-BlackItalic.ttf");
+  font-family: 'Lato';
+  src: url('../assets/font/Lato-BlackItalic.ttf');
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("../assets/font/Lato-Bold.ttf");
+  font-family: 'Lato';
+  src: url('../assets/font/Lato-Bold.ttf');
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("../assets/font/Lato-BoldItalic.ttf");
+  font-family: 'Lato';
+  src: url('../assets/font/Lato-BoldItalic.ttf');
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("../assets/font/Lato-Light.ttf");
+  font-family: 'Lato';
+  src: url('../assets/font/Lato-Light.ttf');
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("../assets/font/Lato-LightItalic.ttf");
+  font-family: 'Lato';
+  src: url('../assets/font/Lato-LightItalic.ttf');
   font-style: italic;
   font-weight: 300;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("../assets/font/Lato-Regular.ttf");
+  font-family: 'Lato';
+  src: url('../assets/font/Lato-Regular.ttf');
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("../assets/font/Lato-Italic.ttf");
+  font-family: 'Lato';
+  src: url('../assets/font/Lato-Italic.ttf');
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
-  font-family: "NotoKufiArabic";
-  src: url("../assets/font/NotoKufiArabic-VariableFont_wght.ttf");
+  font-family: 'NotoKufiArabic';
+  src: url('../assets/font/NotoKufiArabic-VariableFont_wght.ttf');
   font-style: normal;
 }
 * {
@@ -96,7 +96,6 @@
   padding: 0;
   margin: 0;
 }
-
 
 :root {
   --favicon-filter: none;
@@ -175,7 +174,8 @@ h6,
   font-size: var(--headingFS);
 }
 
-.largeHeadingTxt, .fullMediaWrapper .contentWrapper h1 {
+.largeHeadingTxt,
+.fullMediaWrapper .contentWrapper h1 {
   font-size: var(--largeHeadingFS);
   line-height: var(--largeHeadingLH);
   font-weight: 700;
@@ -235,7 +235,7 @@ h6,
   text-transform: uppercase;
 }
 
-[class*=btn] {
+[class*='btn'] {
   white-space: nowrap;
   padding-block: 0.75rem;
   padding-inline: 1.75rem;
@@ -281,15 +281,15 @@ h6,
 }
 
 .starPattern {
-  background-image: url("../assets/images/star-pattern.png");
+  background-image: url('../assets/images/star-pattern.png');
   opacity: 40%;
 }
 
-.sectionGap:not([class*=Bg]) {
+.sectionGap:not([class*='Bg']) {
   margin-block: var(--sectionGap);
 }
 
-.sectionGap[class*=Bg] {
+.sectionGap[class*='Bg'] {
   padding-block: var(--sectionGap);
 }
 
@@ -320,10 +320,10 @@ h6,
   --regualarFS: 16px;
   --mdFS: 18px;
   --smFS: 14px;
-  --secondaryFont: "Lato";
-  --primaryFont: "Lato";
-  --tertiaryFont: "Lato";
-  --arabicFont: "NotoKufiArabic";
+  --secondaryFont: 'Lato';
+  --primaryFont: 'Lato';
+  --tertiaryFont: 'Lato';
+  --arabicFont: 'NotoKufiArabic';
   --sectionGap: 8rem;
   --padding-inline: 2rem;
   font-family: var(--primaryFont);
@@ -369,7 +369,14 @@ body.arabic {
     var(--content-size)
   );
   display: grid;
-  grid-template-columns: [fullWidth-start] var(--fullWidth-width) [breakout-start] var(--breakout-width) [content-start] var(--content-width) [content-end] var(--breakout-width) [breakout-end] var(--fullWidth-width) [fullWidth-end];
+  grid-template-columns:
+    [fullWidth-start] var(--fullWidth-width) [breakout-start] var(
+      --breakout-width
+    )
+    [content-start] var(--content-width) [content-end] var(--breakout-width) [breakout-end] var(
+      --fullWidth-width
+    )
+    [fullWidth-end];
 }
 
 .fullMediaWrapper {
@@ -420,13 +427,13 @@ body.arabic {
     padding-block: 5.5rem;
   }
   .overlappingSection:before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     box-shadow: 0px 18px 18px 0px rgba(0, 0, 0, 0.0392156863);
   }
   .overlappingSection:after {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     box-shadow: 0px 40px 24px 0px rgba(0, 0, 0, 0.031372549);
@@ -457,7 +464,8 @@ body.arabic {
     gap: 0;
   }
 }
-.whyContainer .txtWrapperLeft, .whyContainer .txtWrapperRight {
+.whyContainer .txtWrapperLeft,
+.whyContainer .txtWrapperRight {
   font-family: var(--tertiaryFont);
   display: grid;
   place-content: end;
@@ -465,13 +473,15 @@ body.arabic {
   align-content: center;
 }
 @media (max-width: 769px) {
-  .whyContainer .txtWrapperLeft, .whyContainer .txtWrapperRight {
+  .whyContainer .txtWrapperLeft,
+  .whyContainer .txtWrapperRight {
     order: 1;
     gap: 2rem;
     place-content: start;
   }
 }
-.whyContainer .txtWrapperLeft .txtItem, .whyContainer .txtWrapperRight .txtItem {
+.whyContainer .txtWrapperLeft .txtItem,
+.whyContainer .txtWrapperRight .txtItem {
   display: grid;
   text-align: end;
   height: fit-content;
@@ -480,15 +490,18 @@ body.arabic {
   color: #4e4e4e;
   font-size: var(--smFs);
 }
-.whyContainer .txtWrapperLeft .txtItem .icon, .whyContainer .txtWrapperRight .txtItem .icon {
+.whyContainer .txtWrapperLeft .txtItem .icon,
+.whyContainer .txtWrapperRight .txtItem .icon {
   grid-row: span 2;
 }
 @media (max-width: 769px) {
-  .whyContainer .txtWrapperLeft .txtItem, .whyContainer .txtWrapperRight .txtItem {
+  .whyContainer .txtWrapperLeft .txtItem,
+  .whyContainer .txtWrapperRight .txtItem {
     text-align: start;
     grid-template-columns: 3.5rem 1fr;
   }
-  .whyContainer .txtWrapperLeft .txtItem :not([class*=icon]), .whyContainer .txtWrapperRight .txtItem :not([class*=icon]) {
+  .whyContainer .txtWrapperLeft .txtItem :not([class*='icon']),
+  .whyContainer .txtWrapperRight .txtItem :not([class*='icon']) {
     order: 1;
   }
 }
@@ -496,7 +509,7 @@ body.arabic {
   text-align: start;
   grid-template-columns: 3.5rem 1fr;
 }
-.whyContainer .txtWrapperRight .txtItem :not([class*=icon]) {
+.whyContainer .txtWrapperRight .txtItem :not([class*='icon']) {
   order: 1;
 }
 
@@ -550,7 +563,6 @@ body.arabic {
   z-index: 999;
 }
 
-
 .splide__track {
   height: calc(100% - var(--_arrows-height, 2rem));
 }
@@ -601,10 +613,9 @@ body.arabic {
 .ourpro .splide__slide.is-active img {
   transform: scale(1.2);
   border: 1px solid rgba(0, 0, 0, 0.426);
-  
 }
 
-.splide__track  {
+.productSliderSection .splide__track {
   height: 600px;
 }
 
@@ -620,6 +631,8 @@ body.arabic {
 .splideTxt .splide__slide {
   align-content: start;
   padding-block: 2rem;
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
 }
 .splideTxt a {
   color: var(--headingGreyColor);
@@ -632,6 +645,9 @@ body.arabic {
   font-size: var(--lgFS);
   font-weight: 500;
   margin-block: 1rem;
+}
+.splideTxt .splide__slide.is-active {
+  opacity: 1;
 }
 
 .miniSlideGrid {
@@ -650,10 +666,9 @@ font-size: var(--headingFS);
 .miniSlideGrid h2 {
   max-width: 5ch;
 }
-#mini.sth h5{
+#mini.sth h5 {
   font-size: 18px;
- }
-
+}
 
 .miniSlideGrid .txtWrapper {
   display: grid;
@@ -730,7 +745,6 @@ font-size: var(--headingFS);
   color: var(--lightColor);
 }
 
-
 .headerSection {
   position: fixed;
   top: 0;
@@ -755,7 +769,7 @@ font-size: var(--headingFS);
   cursor: pointer;
 }
 .headerSection button.langBtn:before {
-  content: "";
+  content: '';
   background-color: #000;
   border-radius: 50%;
   width: 200%;
@@ -767,8 +781,7 @@ font-size: var(--headingFS);
   transform: translate(-50%, -50%);
   z-index: -1;
   padding: 8px;
-  }
-  
+}
 
 .ifrmeContainer {
   background: #000;
@@ -806,30 +819,29 @@ font-size: var(--headingFS);
   }
 }
 
-#imgSplideMini h5{
+#imgSplideMini h5 {
   font-size: 18px;
- }
+}
 /*# sourceMappingURL=custom.css.map */
 
-
 /* store */
-.mainGrid .fullCol h2{
+.mainGrid .fullCol h2 {
   margin-bottom: 48px;
 }
 
-.mainGrid .stores{
+.mainGrid .stores {
   padding: 80px 0;
 }
 
 /* minisubhaa */
-.minisubhaa h5{
+.minisubhaa h5 {
   font-size: 20px;
   margin-top: 8px;
 }
-.minisubhaa ul{
-  gap: .5rem;
+.minisubhaa ul {
+  gap: 0.5rem;
 }
-.minisubhaa ul a{
+.minisubhaa ul a {
   text-decoration: none;
 }
 
@@ -842,7 +854,7 @@ font-size: var(--headingFS);
   color: rgb(255, 255, 255);
   border: 1px solid #000;
 }
-.herocontent button a{
+.herocontent button a {
   text-decoration: none;
   color: white;
 }
@@ -887,4 +899,3 @@ font-size: var(--headingFS);
 .insta {
   margin-top: 40px;
 }
-
