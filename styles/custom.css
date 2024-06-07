@@ -377,6 +377,7 @@ body.arabic {
       --fullWidth-width
     )
     [fullWidth-end];
+  overflow: hidden;
 }
 
 .fullMediaWrapper {
@@ -894,8 +895,15 @@ font-size: var(--headingFS);
 
 .splide__slide img {
   border: 1px solid rgba(0, 0, 0, 0.096);
+  border: none;
 }
 
 .insta {
   margin-top: 40px;
+}
+.eapps-instagram-feed-container {
+  max-width: 100vw;
+}
+.slideMini h5 {
+  font-weight: 400;
 }
